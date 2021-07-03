@@ -33,9 +33,6 @@ api.add_resource(Storelist,"/stores")
 
 if __name__ == "__main__":
     app.run(port=1000)
-    from d import db
-    @app.before_first_request
-    def create_table():
-        db.create_all()
+    
 
 
